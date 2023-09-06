@@ -1,0 +1,11 @@
+import instagramy
+# Get the username of the person who is hosting the giveaway
+username = "username"
+# Get the ID of the giveaway post
+post_id = "post_id"
+# Get the list of people who have already been tagged in the giveaway
+tagged_users = instagramy.get_tagged_users(post_id)
+# Create a list of three random people to tag
+random_users = instagramy.get_random_users(3)
+# Tag the three random people in the giveaway
+instagramy.tag_users(post_id, random_users)
